@@ -1,3 +1,9 @@
-#title {
+#title, .Header {
   text-align: center;
+  font-family: "Impact", serif;
+}
+
+
+body {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Cappuccino_at_Sightglass_Coffee.jpg/640px-Cappuccino_at_Sightglass_Coffee.jpg");
 }
