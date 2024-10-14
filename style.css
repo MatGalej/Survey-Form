@@ -14,5 +14,8 @@ body {
   background: rgba(46, 43, 43, 90%);
   min-width: 400px;
   max-width: 600px;
-
+}
+/* DEBUGGING, remove later pls :) */
+form {
+  border: black;
 }
