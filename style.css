@@ -5,5 +5,14 @@
 
 
 body {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Cappuccino_at_Sightglass_Coffee.jpg/640px-Cappuccino_at_Sightglass_Coffee.jpg");
+  background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjEwMTA3M2EuanBn.jpg");
+}
+
+.bg {
+  text-align: center;
+  margin: 3em auto;
+  background: rgba(46, 43, 43, 90%);
+  min-width: 400px;
+  max-width: 600px;
+
 }
