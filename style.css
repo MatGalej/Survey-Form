@@ -15,7 +15,13 @@ body {
   min-width: 400px;
   max-width: 600px;
 }
+
+
 /* DEBUGGING, remove later pls :) */
 form {
-  border: black;
+  border-color: purple;
+}
+
+#survey-form {
+
 }
