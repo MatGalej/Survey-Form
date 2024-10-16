@@ -9,14 +9,29 @@
 <body>
 <div class="Header">
   <h1 id="title">Matthews Survey Form</h1>
-  <p><i>Answer some questions below on your favorite type of Coffee :D</i></p>
+  <p id="description"><i>Answer some questions below on your favorite type of Coffee :D</i></p>
 </div>
 <div class="bg">
   <div class="form">
     <form id="survey-form">
-      <i>What is your Name?</i><input id="name" required type="text">
-      <i>What is your email?</i><input id="email" required type="email">
-      <i>How old are you?</i><input id="number" required type="number" min="13" max="120">
+      <i>What is your Name?</i><input id="name-label" required type="text" placeholder="John Doe">
+
+      <i>What is your email?</i><input id="email-label" required type="email" placeholder="Youremail@provider.com">
+
+      <i>How old are you?</i><input id="number-label" required type="number" min="13" max="120" placeholder="18">
+
+      <i>What is your favorite type of Coffee?</i>
+        <select required id="coffee-type">
+          <option value="blank">(Select option)</option>
+          <option value="Black Coffee">Black Coffee</option>
+          <option value="Mocha">Mocha</option>
+          <option value="Cappuccino">Cappuccino</option>
+          <option value="Americano">Americano</option>
+        </select>
+
+      <i>What is your gender?</i><input checked required id="gender-male" type="radio" name="gender">Male
+      <input required id="gender-female" type="radio" name="gender">Female
+
       <input type="submit">
     </form>
   </div>

@@ -16,12 +16,6 @@ body {
   max-width: 600px;
 }
 
-
-/* DEBUGGING, remove later pls :) */
-form {
-  border-color: purple;
-}
-
 #survey-form i {
   display: block;
   padding: .5em 0;
