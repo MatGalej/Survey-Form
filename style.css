@@ -22,6 +22,12 @@ form {
   border-color: purple;
 }
 
-#survey-form {
+#survey-form i {
+  display: block;
+  padding: .5em 0;
+  color: whitesmoke;
+}
 
+#survey-form input {
+  display: inline-block;
 }
