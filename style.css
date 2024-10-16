@@ -14,6 +14,7 @@ body {
   background: rgba(46, 43, 43, 90%);
   min-width: 400px;
   max-width: 600px;
+  border-radius: 20px;
 }
 
 #survey-form i {
@@ -24,4 +25,16 @@ body {
 
 #survey-form input {
   display: inline-block;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+.form {
+  color: whitesmoke;
+  padding: 10px;
 }
