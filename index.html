@@ -29,9 +29,18 @@
           <option value="Americano">Americano</option>
         </select>
 
-      <i>What is your gender?</i><input checked required id="gender-male" type="radio" name="gender">Male
-      <input required id="gender-female" type="radio" name="gender">Female
+      <i>What is your gender?</i>
+      <div class="radio-group">
+        <input checked required id="gender-male" type="radio" name="gender">Male
+        <input required id="gender-female" type="radio" name="gender">Female
+        <input id="gender-unknown" type="radio" name="gender">Other
+      </div>
 
+      <div class="additional-comments">
+        <i>Anything you would like to share with us?</i>
+        <textarea required id="comments" rows="5" cols="30" placeholder="My favorite type of coffee is...">
+        </textarea>
+      </div>
       <input type="submit">
     </form>
   </div>

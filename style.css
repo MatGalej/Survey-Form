@@ -26,15 +26,43 @@ body {
 #survey-form input {
   display: inline-block;
   border-radius: 5px;
+  text-align: center;
+}
+
+#coffee-type {
+  text-align: center;
+  border-radius: 5px;
+  padding: 2px 0;
+  color: grey;
 }
 
 input[type="submit"] {
   display: block;
   margin: 20px auto;
   border-radius: 5px;
+  font-size: 1.05em;
+  font-style: italic;
+  width: 30%;
+}
+
+.additional-comments {
+  padding: 15px 0;
+}
+
+.additional-comments textarea {
+  max-width: 500px;
+  max-height: 200px;
+}
+
+.radio-group {
+  padding: 0px;
 }
 
 .form {
   color: whitesmoke;
   padding: 10px;
+}
+
+#name-label, #email-label, #coffee-type {
+  width: 50%;
 }
