@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
   <title>Matthews Survey Form</title>
 </head>
+
 <body>
 <div class="Header">
   <h1 id="title">Matthews Survey Form</h1>
@@ -14,26 +15,26 @@
 <div class="bg">
   <div class="form">
     <form id="survey-form">
-      <i>What is your Name?</i><input id="name-label" required type="text" placeholder="John Doe">
-
-      <i>What is your email?</i><input id="email-label" required type="email" placeholder="Youremail@provider.com">
-
-      <i>How old are you?</i><input id="number-label" required type="number" min="13" max="120" placeholder="18">
-
+      <label id="name-label"><i>What is your name?</i></label><input id="name" required type="text"
+                                                                     placeholder="John Doe">
+      <label id="email-label"><i>What is your email?</i></label><input id="email" required type="email"
+                                                                       placeholder="Youremail@provider.com">
+      <label id="number-label"><i>How old are you?</i></label><input id="number" required type="number" min="13"
+                                                                     max="120" placeholder="18">
       <i>What is your favorite type of Coffee?</i>
-        <select required id="coffee-type">
-          <option value="blank">(Select option)</option>
-          <option value="Black Coffee">Black Coffee</option>
-          <option value="Mocha">Mocha</option>
-          <option value="Cappuccino">Cappuccino</option>
-          <option value="Americano">Americano</option>
-        </select>
+      <select required id="dropdown">
+        <option value="blank">(Select option)</option>
+        <option value="Black Coffee">Black Coffee</option>
+        <option value="Mocha">Mocha</option>
+        <option value="Cappuccino">Cappuccino</option>
+        <option value="Americano">Americano</option>
+      </select>
 
       <i>What is your gender?</i>
       <div class="radio-group">
-        <input checked required id="gender-male" type="radio" name="gender">Male
-        <input required id="gender-female" type="radio" name="gender">Female
-        <input id="gender-unknown" type="radio" name="gender">Other
+        <input checked required id="gender-male" type="radio" name="gender" value="male">Male
+        <input required id="gender-female" type="radio" name="gender" value="female">Female
+        <input required id="gender-unknown" type="radio" name="gender" value="other">Other
       </div>
 
       <div class="additional-comments">
@@ -41,12 +42,18 @@
         <textarea required id="comments" rows="5" cols="30" placeholder="My favorite type of coffee is...">
         </textarea>
       </div>
-      <input type="submit">
+
+      <div class="checkboxes">
+        <input id="marketing-consent" type="checkbox" value="marketing-consent"> I agree to the use of my information for
+        statistical and marketing use (optional)
+        <br>
+        <input required id="age-consent" type="checkbox" value="age-consent"> I agree that the age I provided is
+        truthful (required)
+      </div>
+
+      <input type="submit" id="submit">
     </form>
   </div>
-
 </div>
-
-
 </body>
 </html>

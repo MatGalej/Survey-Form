@@ -29,11 +29,12 @@ body {
   text-align: center;
 }
 
-#coffee-type {
+#dropdown {
   text-align: center;
   border-radius: 5px;
   padding: 2px 0;
   color: grey;
+  width: 200px;
 }
 
 input[type="submit"] {
@@ -52,6 +53,8 @@ input[type="submit"] {
 .additional-comments textarea {
   max-width: 500px;
   max-height: 200px;
+  min-width: 300px;
+  min-height: 100px;
 }
 
 .radio-group {
